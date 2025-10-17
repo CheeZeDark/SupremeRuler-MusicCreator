@@ -5,7 +5,7 @@ import os.path as p
 from time import sleep as sl
 def Main():
     wavfile_input = input("Please Write full path with .wav in the end")
-    xwmaencode_inp = input("Write you're own name with in the end .xwma file")
+    xwmaencode_inp = input("Write you're own name in the end .xwma file")
     if(p.exists(wavfile_input)):
         os.system("xwmaencode {} {}".format(wavfile_input, xwmaencode_inp))
         sl(4)
@@ -18,4 +18,5 @@ def Main():
         exit(445)
 
 if __name__ == "__main__":
+
     Main()
