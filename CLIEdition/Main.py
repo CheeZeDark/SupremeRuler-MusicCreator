@@ -7,7 +7,7 @@ def Main():
     wavfile_input = input("Please Write full path with .wav in the end")
     xwmaencode_inp = input("Write you're own name in the end .xwma file")
     if(p.exists(wavfile_input)):
-        os.system("xwmaencode {} {}".format(wavfile_input, xwmaencode_inp))
+        os.system("xwmaencode {} {}".format(wavfile_input, xwmaencode_inp)) # You Need to Including XWMAEncode.exe to System Environment!!!
         sl(4)
         if(p.exists(xwmaencode_inp)):
             print("Successfully Converted into {}".format(xwmaencode_inp))
@@ -20,3 +20,4 @@ def Main():
 if __name__ == "__main__":
 
     Main()
+
